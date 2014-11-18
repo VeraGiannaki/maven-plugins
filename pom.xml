@@ -52,7 +52,7 @@
         <java-version>1.6</java-version>
 
         <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.maven%22%20AND%20a%3A%22maven-core%22 -->
-        <maven-version>3.0.5</maven-version>
+        <maven-version>3.2.3</maven-version>
 
         <!-- http://evgenyg.artifactoryonline.com/evgenyg/plugins-releases/com/github/goldin/about-maven-plugin/ -->
         <previous-plugins-version>0.3-beta-1</previous-plugins-version>
@@ -260,7 +260,7 @@
 
         <plugins>
 
-            <plugin>
+            <!--plugin>
                 <groupId>com.github.goldin</groupId>
                 <artifactId>silencer-maven-plugin</artifactId>
                 <version>${previous-plugins-version}</version>
@@ -278,7 +278,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <!-- Enforcing Maven/Java versions                                                 -->
@@ -289,7 +289,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.maven.plugins%22%20AND%20a%3A%22maven-enforcer-plugin%22 -->
-                <version>1.2</version>
+                <version>1.3</version>
                 <inherited>false</inherited>
                 <executions>
                     <execution>
@@ -302,9 +302,7 @@
                 </executions>
                 <configuration>
                     <rules>
-                        <requireMavenVersion>
-                            <version>${maven-version}</version>
-                        </requireMavenVersion>
+                        
                         <requireJavaVersion>
                             <version>${java-version}</version>
                         </requireJavaVersion>

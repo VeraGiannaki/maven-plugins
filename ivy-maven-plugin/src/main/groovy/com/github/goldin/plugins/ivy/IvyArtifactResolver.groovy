@@ -3,11 +3,11 @@ package com.github.goldin.plugins.ivy
 import static com.github.goldin.plugins.common.GMojoUtils.*
 import org.gcontracts.annotations.Ensures
 import org.gcontracts.annotations.Requires
-import org.sonatype.aether.RepositorySystemSession
-import org.sonatype.aether.impl.ArtifactResolver
-import org.sonatype.aether.resolution.ArtifactRequest
-import org.sonatype.aether.resolution.ArtifactResult
-import org.sonatype.aether.util.artifact.DefaultArtifact
+import org.eclipse.aether.RepositorySystemSession
+import org.eclipse.aether.impl.ArtifactResolver
+import org.eclipse.aether.resolution.ArtifactRequest
+import org.eclipse.aether.resolution.ArtifactResult
+import org.eclipse.aether.artifact.DefaultArtifact
 
 
 /**

@@ -96,38 +96,42 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.maven.plugin-tools</groupId>
-            <artifactId>maven-plugin-annotations</artifactId>
-            <!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.maven.plugin-tools%22%20AND%20a%3A%22maven-plugin-annotations%22 -->
-            <version>3.2</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.sonatype.aether</groupId>
-            <artifactId>aether-api</artifactId>
-            <version>${aether-version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.sonatype.aether</groupId>
-            <artifactId>aether-util</artifactId>
-            <version>${aether-version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.sonatype.aether</groupId>
-            <artifactId>aether-impl</artifactId>
-            <version>${aether-version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.sonatype.aether</groupId>
-            <artifactId>aether-connector-wagon</artifactId>
-            <version>${aether-version}</version>
-            <scope>provided</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugin-tools</groupId>
+			<artifactId>maven-plugin-annotations</artifactId>
+			<!-- http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.maven.plugin-tools%22%20AND%20a%3A%22maven-plugin-annotations%22 -->
+			<version>3.2</version>
+			<scope>compile</scope>
+		</dependency>
+	
+	    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- eclipse.aether -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-api</artifactId>
+			<version>0.9.0.M2</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-util</artifactId>
+			<version>0.9.0.M2</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-spi</artifactId>
+			<version>0.9.0.M2</version>
+		</dependency>
+	
+	
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-impl</artifactId>
+			<version>1.0.0.v20140518</version>
+		</dependency>
+		    
 
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
         <!-- org.apache.maven.shared -->
